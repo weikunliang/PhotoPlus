@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.cmu.weikunl.photoplus.TakePicture" >
+	
+	<edu.cmu.weikunl.photoplus.PaintView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/paintView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+	
+	<edu.cmu.weikunl.photoplus.ColorView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/colorView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+	<Button
+	    android:id="@+id/red"
+	    style="?android:attr/buttonStyleSmall"
+	    android:layout_width="20sp"
+	    android:layout_height="20sp"
+	    android:layout_alignLeft="@+id/paintView"
+	    android:layout_alignTop="@+id/paintView"
+	    android:layout_marginLeft="8dp"
+	    android:layout_marginTop="56dp"
+	    android:background="@drawable/red"
+	    android:onClick="btnRed" />
+
+	<Button
+	    android:id="@+id/magenta"
+	    style="?android:attr/buttonStyleSmall"
+	    android:layout_width="20sp"
+	    android:layout_height="20sp"
+	    android:layout_alignLeft="@+id/red"
+	    android:layout_below="@+id/red"
+	    android:background="@drawable/magenta"
+	    android:onClick="btnMagenta" />
+
+	<Button
+	    android:id="@+id/blue"
+	    style="?android:attr/buttonStyleSmall"
+	    android:layout_width="20sp"
+	    android:layout_height="20sp"
+	    android:layout_alignLeft="@+id/magenta"
+	    android:layout_below="@+id/magenta"
+	    android:background="@drawable/blue"
+	    android:onClick="btnBlue" />
+
+	<Button
+	    android:id="@+id/green"
+	    style="?android:attr/buttonStyleSmall"
+	    android:layout_width="20sp"
+	    android:layout_height="20sp"
+	    android:layout_alignLeft="@+id/blue"
+	    android:layout_below="@+id/blue"
+	    android:background="@drawable/green"
+	    android:onClick="btnGreen" />
+
+	<Button
+	    android:id="@+id/yellow"
+	    style="?android:attr/buttonStyleSmall"
+	    android:layout_width="20sp"
+	    android:layout_height="20sp"
+	    android:layout_alignLeft="@+id/green"
+	    android:layout_below="@+id/green"
+	    android:background="@drawable/yellow"
+	    android:onClick="btnYellow" />
+
+	<Button
+	    android:id="@+id/white"
+	    style="?android:attr/buttonStyleSmall"
+	    android:layout_width="20sp"
+	    android:layout_height="20sp"
+	    android:layout_alignLeft="@+id/yellow"
+	    android:layout_below="@+id/yellow"
+	    android:background="@drawable/white"
+	    android:onClick="btnWhite" />
+
+	<Button
+	    android:id="@+id/black"
+	    style="?android:attr/buttonStyleSmall"
+	    android:layout_width="20sp"
+	    android:layout_height="20sp"
+	    android:layout_alignLeft="@+id/white"
+	    android:layout_below="@+id/white"
+	    android:background="@drawable/black"
+	    android:onClick="btnBlack" />
+
+	<Button
+	    android:id="@+id/button6"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignRight="@+id/paintView"
+	    android:layout_alignTop="@+id/paintView"
+	    android:background="@drawable/save"
+	    android:onClick="btnPressedSave" />
+
+</RelativeLayout>

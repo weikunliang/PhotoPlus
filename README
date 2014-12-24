@@ -1,0 +1,7 @@
+This application consists of 3 main functionalities: Taking a picture and then editing it, uploading a picture and then editing it, 
+and putting picture pieces together. When the user is editing it, the user should be able to click on any color and draw with that
+color on the image. When the image is saved, it is automatically saved in the gallery. In the collage functionality, the user can put 
+pieces of pictures together depending on how many pictures the user has. The user can then drag the image to place it in a desired 
+position. 
+
+All functionalities are fully working. 

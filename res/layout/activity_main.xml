@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.cmu.weikunl.photoplus.MainActivity" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/collage"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="80dp"
+        android:text="@string/title"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="50sp"
+        android:textStyle="italic|bold" />
+
+    <Button
+        android:id="@+id/collage"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/uploadpic"
+        android:background="@drawable/button"
+        android:text="@string/collage"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/takepic"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/uploadpic"
+        android:layout_alignBottom="@+id/uploadpic"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/button"
+        android:text="@string/take"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/uploadpic"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="85dp"
+        android:background="@drawable/button"
+        android:text="@string/upload"
+        android:textSize="20sp" />
+
+</RelativeLayout>
